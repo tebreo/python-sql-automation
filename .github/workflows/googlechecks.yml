@@ -2,7 +2,7 @@ name: Run Google Check
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   run-script:
@@ -15,7 +15,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.13"
+
+      #- name: Install requests
+      # run: pip install requests
 
       - name: Run script
         run: python check_google_status.py
