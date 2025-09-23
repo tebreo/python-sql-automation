@@ -3,7 +3,6 @@ import requests
 import csv
 from datetime import datetime
 import time
-#Update function
 
 # Add this function near the top of your script (after imports)
 headers = {
